@@ -1,0 +1,83 @@
+{
+    "sql":[
+        
+        {
+            "id":661,
+            "employeeName": "Harika Valikala",
+            "dateOfBirth": "27/07/1995",
+            "mobileNumber": 9705115030
+        },
+        {
+            "id":662,
+            "employeeName": "Bindu Bhuvanagiri",
+            "dateOfBirth": "09/02/1970",
+            "mobileNumber": 9963914265
+        },
+        {
+            "id":663,
+            "employeeName": "Ravi Posa",
+            "dateOfBirth": "17/08/1994",
+            "mobileNumber": 9589580212
+        },
+        {
+            "id":664,
+            "employeeName": "Keerthi Pagitapati",
+            "dateOfBirth": "05/02/1994",
+            "mobileNumber": 9502210501
+        }
+    ],
+    "mongo":[
+        
+        {
+            "id":661,
+            "employeeName": "Harika Valikala",
+            "dateOfBirth": "27/07/1995",
+            "mobileNumber": 9705115030
+        },
+        {
+            "id":662,
+            "employeeName": "Bindu Bhuvanagiri",
+            "dateOfBirth": "09/02/1970",
+            "mobileNumber": 9963914265
+        },
+        {
+            "id":663,
+            "employeeName": "Ravi Posa",
+            "dateOfBirth": "17/08/1994",
+            "mobileNumber": 9589580212
+        },
+        {
+            "id":664,
+            "employeeName": "Keerthi Pagitapati",
+            "dateOfBirth": "05/02/1994",
+            "mobileNumber": 9502210501
+        }
+    ],
+    "mysql":[
+        
+        {
+            "id":661,
+            "employeeName": "Harika Valikala",
+            "dateOfBirth": "27/07/1995",
+            "mobileNumber": 9705115030
+        },
+        {
+            "id":662,
+            "employeeName": "Bindu Bhuvanagiri",
+            "dateOfBirth": "09/02/1970",
+            "mobileNumber": 9963914265
+        },
+        {
+            "id":663,
+            "employeeName": "Ravi Posa",
+            "dateOfBirth": "17/08/1994",
+            "mobileNumber": 9589580212
+        },
+        {
+            "id":664,
+            "employeeName": "Keerthi Pagitapati",
+            "dateOfBirth": "05/02/1994",
+            "mobileNumber": 9502210501
+        }
+    ]
+  }

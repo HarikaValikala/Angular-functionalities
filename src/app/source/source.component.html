@@ -1,0 +1,19 @@
+<div class="row">
+<div class="container">
+  <div class="col-md-4">
+    <h4>Source Data</h4>
+    <div class="form-group">
+      <label class="radion-inline" *ngFor="let data of srcDbs">
+          <input type="radio" (click)="Source(data.name)" value= {{data.name}} >
+          <b>{{ data.name }}</b>
+      </label>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" routerLink="form">Connect</button>
+    </div>
+  </div>
+  <div class="col-md-4">
+      <router-outlet></router-outlet>
+  </div>
+</div>
+</div>

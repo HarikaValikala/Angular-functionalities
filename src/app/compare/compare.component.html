@@ -1,0 +1,51 @@
+<div class="container">
+        <form #form="ngForm" (ngSubmit)="Compare()">
+                <h4>Select Database:</h4>
+                <div class="jumbotron col-md-4 source"> 
+            
+                <h4>Source Data</h4>
+                <label class="radio-inline" *ngFor="let src of dataSource">
+                    <input type="radio" (click)="sourceData(src.name)" value= {{src.name}} >
+                    <b>{{ src.name }}</b>
+                </label>
+                <div class="col-md-12">
+                    <label class="checkbox-inline" *ngFor="let person of keys | keyvalue" >
+                        <input type="checkbox" name="keys" (click)="keyData()" value="{{ person.key }}"><b>{{ person.key }}</b>
+                </label>
+            
+                </div>
+                <div class="col-md-12">
+                        <label class="checkbox-inline" *ngFor="let row of col">
+                            <input type="checkbox" name="column" ><b>{{ row.department }}</b><br>
+                            <input type="checkbox" name="id">{{row.id}}<br>
+                    </label>
+                    
+                    </div> 
+                </div>
+                <div class="form-group col-md-1">
+                        <button type="button" class="btn btn-info" (click)="Compare()">Compare</button>
+                        </div>
+                <div class="jumbotron col-md-4 target">
+            
+                    <h4>Target Data</h4>
+                    <label class="radio-inline" *ngFor="let tgt of dataTarget">
+                        <input type="radio" name="name" (click)="targetData(tgt.name)" value= {{tgt.name}} >
+                        <b>{{ status1.name }}</b>
+                    </label>
+                    <div class="col-md-12">
+                        <label class="checkbox-inline" *ngFor="let people of trgtKey | keyvalue" >
+                            <input type="checkbox" name="tarData" (click)="targetKeyData(people.key)" value="{{ people.key }}"><b>{{ person1.key }}</b>
+                    </label>
+                    </div> 
+                    <div class="col-md-12">
+                        <label class="checkbox-inline" *ngFor="let target of trgt">
+                            <input type="checkbox" name="column" ><b>{{ target.department }}</b><br>
+                            <input type="checkbox" name="id">{{target.id}}<br>
+                    </label>
+                    </div>
+                    
+                    </div>
+                    
+                </form>
+  </div>
+

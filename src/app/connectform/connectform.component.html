@@ -1,0 +1,39 @@
+
+
+<form [formGroup]="connectForm" novalidate>
+    <div class="form-group">
+        <label>Database Name:</label>
+        <input class="form-control" formControlName="dbName" type="text">
+    </div>
+    <div *ngIf="connectForm.controls['dbName'].invalid && (connectForm.controls['dbName'].dirty || connectForm.controls['dbName'].touched)" class="alert alert-danger">
+        <div *ngIf="connectForm.controls['dbName'].errors.required">
+            Database Name is required.
+        </div>
+    </div>
+     <div class="form-group">
+        <label>IP Address:</label>
+        <input class="form-control" formControlName="idAddress" type="text">
+    </div>
+    <div *ngIf="connectForm.controls['idAddress'].invalid && (connectForm.controls['idAddress'].dirty || connectForm.controls['idAddress'].touched)" class="alert alert-danger">
+        <div *ngIf="connectForm.controls['idAddress'].errors.required">
+            IP Address is required.
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="userid">Username</label>
+            <input type="text" class="form-control" formControlName="userName" />
+            <div *ngIf="connectForm.controls['userName'].invalid && (connectForm.controls['userName'].dirty || connectForm.controls['userName'].touched)" class="alert alert-danger">
+                  <div *ngIf="connectForm.controls['userName'].errors.required">Username is required</div>
+            </div>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+          <input type="password" class="form-control" formControlName="password"/>
+          <div *ngIf="connectForm.controls['password'].invalid && (connectForm.controls['password'].dirty || connectForm.controls['password'].touched)" class="alert alert-danger">
+                  <div *ngIf="connectForm.controls['password'].errors.required">Password is required</div>
+          </div>
+    </div>
+    <button type="submit"  class="btn btn-primary" [disabled]="connectForm.pristine || connectForm.invalid" routerLink="target">
+        Submit
+    </button>
+</form>
